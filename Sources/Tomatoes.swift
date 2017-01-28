@@ -113,7 +113,7 @@ public enum Tomatoes {
         }
     }
     
-    func request(_ parameters: JSONObject? = nil, completion: ResponseBlock?) {
+    public func request(_ parameters: JSONObject? = nil, completion: ResponseBlock?) {
         guard let URL = URL(string: Tomatoes.baseURLString) else { return }
         let token = KeychainSwift().get(Tomatoes.tokenKey) ?? ""
         let url = URL.appendingPathComponent(path)

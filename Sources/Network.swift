@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias ResponseBlock = (_ result: Any?, _ error: Error?) -> Void
+public typealias ResponseBlock = (_ result: Any?, _ error: Error?) -> Void
 
 struct Network {
     
