@@ -8,18 +8,11 @@
 
 import Foundation
 
-enum Period: String {
-    case daily
-    case weekly
-    case monthly
-    case overall
-}
-
 /**
  Wrapper around the tomato.es web API. 
  http://www.tomato.es/pages/api_reference
  */
-enum Tomatoes {
+public enum Tomatoes {
     
     static let baseURLString = "http://www.tomato.es"
     static let tokenKey = "tomatoes_token"
@@ -101,7 +94,7 @@ enum Tomatoes {
         case .readTomatoes: return PaginatedList<Tomato>.init(json: object, root: "tomatoes") as PaginatedList<Tomato>?
         case .readProjects: return PaginatedList<Project>.init(json: object, root: "projects") as PaginatedList<Project>?
         case .readProject, .createProject, .updateProject: return Project(json: object) as Project?
-        case .readLeaderboard: return PaginatedList<Score>.init(json: object, root: "score") as PaginatedList<Score>?
+        case .readLeaderboard: return PaginatedList<Score>.init(json: object, root: "scores") as PaginatedList<Score>?
         case .destroySession, .destroyTomato, .destroyProject: return nil
         default: return object
         }

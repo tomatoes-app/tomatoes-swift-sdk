@@ -8,11 +8,14 @@
 
 import Foundation
 
-protocol Deserializable {
+public typealias JSONObject = [String : Any]
+public typealias JSONList = [[String : Any]]
+
+public protocol Deserializable {
     init?(json: [String : Any]?)
 }
 
-extension Deserializable {
+public extension Deserializable {
     static func list<T: Deserializable>(json: JSONList?) -> [T]? {
         guard let jsonArray = json else { return nil }
         var objectArray = [T]()
@@ -25,39 +28,46 @@ extension Deserializable {
     }
 }
 
-protocol Serializable {
+public protocol Serializable {
     func toJSON() -> [String : Any]
 }
 
-class User: Deserializable {
+public enum Period: String {
+    case daily
+    case weekly
+    case monthly
+    case overall
+}
+
+public class User: Deserializable {
     var id: String?
     var name: String?
     
-    required init?(json: [String : Any]?) {
+    required public init?(json: [String : Any]?) {
         id = json?["id"] as? String
         name = json?["name"] as? String
     }
 }
 
-class Tomato: Deserializable {
+public class Tomato: Deserializable {
     var id: String?
     
-    required init?(json: [String : Any]?) {
+    required public init?(json: [String : Any]?) {
         id = json?["id"] as? String
     }
 }
 
-class PaginatedList<T: Deserializable>: Deserializable {
+public class PaginatedList<T: Deserializable>: Deserializable {
     var items: [T]?
     var totalPages: Int?
     var currentPage: Int?
     var totalCount: Int?
     
-    required convenience init?(json: [String : Any]?) {
+    required public convenience init?(json: [String : Any]?) {
         self.init(json: json, root: "")
     }
     
-    required init?(json: [String : Any]?, root: String) {
+    required public init?(json: [String : Any]?, root: String) {
         items = T.list(json: json?[root] as? JSONList) as [T]?
         let pagination = json?["pagination"] as? JSONObject
         totalPages = pagination?["total_pages"] as? Int
@@ -66,19 +76,19 @@ class PaginatedList<T: Deserializable>: Deserializable {
     }
 }
 
-class Project: Deserializable {
+public class Project: Deserializable {
     var id: String?
     
-    required init?(json: [String : Any]?) {
+    required public init?(json: [String : Any]?) {
         id = json?["id"] as? String
     }
 }
 
-class Score: Deserializable {
+public class Score: Deserializable {
     var user: User?
     var score: Int?
     
-    required init?(json: [String : Any]?) {
+    required public init?(json: [String : Any]?) {
         user = User(json: json?["user"] as? JSONObject)
         score = json?["score"] as? Int
     }

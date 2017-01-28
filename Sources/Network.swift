@@ -8,8 +8,6 @@
 
 import Foundation
 
-typealias JSONObject = [String : Any]
-typealias JSONList = [[String : Any]]
 typealias ResponseBlock = (_ result: Any?, _ error: Error?) -> Void
 
 struct Network {
