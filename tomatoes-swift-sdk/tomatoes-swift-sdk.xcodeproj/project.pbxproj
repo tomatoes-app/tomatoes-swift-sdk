@@ -13,6 +13,14 @@
 		C7775D371E3CFFF400B55CC2 /* TomatoesMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D2E1E3CFFF300B55CC2 /* TomatoesMacOS.framework */; };
 		C7775D3C1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */; };
 		C7775D3E1E3CFFF400B55CC2 /* TomatoesMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D301E3CFFF300B55CC2 /* TomatoesMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7775D4B1E3D02C900B55CC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D491E3D02C900B55CC2 /* Model.swift */; };
+		C7775D4C1E3D02C900B55CC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D491E3D02C900B55CC2 /* Model.swift */; };
+		C7775D4D1E3D02C900B55CC2 /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */; };
+		C7775D4E1E3D02C900B55CC2 /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */; };
+		C7775D501E3D032200B55CC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4F1E3D032200B55CC2 /* Network.swift */; };
+		C7775D511E3D032200B55CC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4F1E3D032200B55CC2 /* Network.swift */; };
+		C7CCF3601E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */; };
+		C7CCF3611E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,10 @@
 		C7775D361E3CFFF300B55CC2 /* TomatoesMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoesMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoesMacOSTests.swift; sourceTree = "<group>"; };
 		C7775D3D1E3CFFF400B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7775D491E3D02C900B55CC2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
+		C7775D4F1E3D032200B55CC2 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +164,10 @@
 		C7775D481E3D022300B55CC2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C7775D491E3D02C900B55CC2 /* Model.swift */,
+				C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */,
+				C7775D4F1E3D032200B55CC2 /* Network.swift */,
+				C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -337,6 +353,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7775D4B1E3D02C900B55CC2 /* Model.swift in Sources */,
+				C7775D4D1E3D02C900B55CC2 /* Tomatoes.swift in Sources */,
+				C7775D501E3D032200B55CC2 /* Network.swift in Sources */,
+				C7CCF3601E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7775D4C1E3D02C900B55CC2 /* Model.swift in Sources */,
+				C7775D4E1E3D02C900B55CC2 /* Tomatoes.swift in Sources */,
+				C7775D511E3D032200B55CC2 /* Network.swift in Sources */,
+				C7CCF3611E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +543,7 @@
 		C7775D261E3CFE6900B55CC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -574,6 +599,7 @@
 		C7775D271E3CFE6900B55CC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -746,6 +772,7 @@
 		C7775D431E3CFFF400B55CC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -802,6 +829,7 @@
 		C7775D441E3CFFF400B55CC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -866,6 +894,7 @@
 				C7775D241E3CFE6900B55CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7775D251E3CFE6900B55CC2 /* Build configuration list for PBXNativeTarget "TomatoesiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -874,6 +903,7 @@
 				C7775D271E3CFE6900B55CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7775D3F1E3CFFF400B55CC2 /* Build configuration list for PBXNativeTarget "TomatoesMacOS" */ = {
 			isa = XCConfigurationList;
@@ -882,6 +912,7 @@
 				C7775D411E3CFFF400B55CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7775D421E3CFFF400B55CC2 /* Build configuration list for PBXNativeTarget "TomatoesMacOSTests" */ = {
 			isa = XCConfigurationList;
@@ -890,6 +921,7 @@
 				C7775D441E3CFFF400B55CC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

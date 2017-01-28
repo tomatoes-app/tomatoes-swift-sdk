@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import TomatoesiOS
 
 class TomatoesiOSTests: XCTestCase {
     
