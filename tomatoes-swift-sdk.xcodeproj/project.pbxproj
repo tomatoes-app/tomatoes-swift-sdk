@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C725A4F71E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
+		C725A4F81E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
+		C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Model.swift */; };
+		C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Model.swift */; };
+		C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F51E3D4D7E0026A71D /* Network.swift */; };
+		C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F51E3D4D7E0026A71D /* Network.swift */; };
+		C725A4FD1E3D4D7E0026A71D /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */; };
+		C725A4FE1E3D4D7E0026A71D /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */; };
 		C7775D1A1E3CFE6900B55CC2 /* TomatoesiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */; };
 		C7775D1F1E3CFE6900B55CC2 /* TomatoesiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D1E1E3CFE6900B55CC2 /* TomatoesiOSTests.swift */; };
 		C7775D211E3CFE6900B55CC2 /* TomatoesiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7775D371E3CFFF400B55CC2 /* TomatoesMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D2E1E3CFFF300B55CC2 /* TomatoesMacOS.framework */; };
 		C7775D3C1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */; };
 		C7775D3E1E3CFFF400B55CC2 /* TomatoesMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D301E3CFFF300B55CC2 /* TomatoesMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7775D4B1E3D02C900B55CC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D491E3D02C900B55CC2 /* Model.swift */; };
-		C7775D4C1E3D02C900B55CC2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D491E3D02C900B55CC2 /* Model.swift */; };
-		C7775D4D1E3D02C900B55CC2 /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */; };
-		C7775D4E1E3D02C900B55CC2 /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */; };
-		C7775D501E3D032200B55CC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4F1E3D032200B55CC2 /* Network.swift */; };
-		C7775D511E3D032200B55CC2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D4F1E3D032200B55CC2 /* Network.swift */; };
-		C7CCF3601E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */; };
-		C7CCF3611E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
+		C725A4F41E3D4D7E0026A71D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C725A4F51E3D4D7E0026A71D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
 		C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TomatoesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomatoesiOS.h; sourceTree = "<group>"; };
 		C7775D141E3CFE6900B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,10 +57,6 @@
 		C7775D361E3CFFF300B55CC2 /* TomatoesMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoesMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoesMacOSTests.swift; sourceTree = "<group>"; };
 		C7775D3D1E3CFFF400B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7775D491E3D02C900B55CC2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
-		C7775D4F1E3D032200B55CC2 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +93,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C725A4F21E3D4D7E0026A71D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */,
+				C725A4F41E3D4D7E0026A71D /* Model.swift */,
+				C725A4F51E3D4D7E0026A71D /* Network.swift */,
+				C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		C7775C971E3CF98200B55CC2 = {
 			isa = PBXGroup;
 			children = (
-				C7775D481E3D022300B55CC2 /* Sources */,
+				C725A4F21E3D4D7E0026A71D /* Sources */,
 				C7775D461E3D006900B55CC2 /* Tests */,
 				C7775D121E3CFE6900B55CC2 /* TomatoesiOS */,
 				C7775D1D1E3CFE6900B55CC2 /* TomatoesiOSTests */,
@@ -159,18 +170,6 @@
 			);
 			name = Tests;
 			path = ../Tests;
-			sourceTree = "<group>";
-		};
-		C7775D481E3D022300B55CC2 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				C7775D491E3D02C900B55CC2 /* Model.swift */,
-				C7775D4A1E3D02C900B55CC2 /* Tomatoes.swift */,
-				C7775D4F1E3D032200B55CC2 /* Network.swift */,
-				C7CCF35F1E3D15EC001061C0 /* KeychainSwiftDistrib.swift */,
-			);
-			name = Sources;
-			path = ../Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7775D4B1E3D02C900B55CC2 /* Model.swift in Sources */,
-				C7775D4D1E3D02C900B55CC2 /* Tomatoes.swift in Sources */,
-				C7775D501E3D032200B55CC2 /* Network.swift in Sources */,
-				C7CCF3601E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */,
+				C725A4F71E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */,
+				C725A4FD1E3D4D7E0026A71D /* Tomatoes.swift in Sources */,
+				C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */,
+				C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +371,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7775D4C1E3D02C900B55CC2 /* Model.swift in Sources */,
-				C7775D4E1E3D02C900B55CC2 /* Tomatoes.swift in Sources */,
-				C7775D511E3D032200B55CC2 /* Network.swift in Sources */,
-				C7CCF3611E3D15EC001061C0 /* KeychainSwiftDistrib.swift in Sources */,
+				C725A4F81E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */,
+				C725A4FE1E3D4D7E0026A71D /* Tomatoes.swift in Sources */,
+				C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */,
+				C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
