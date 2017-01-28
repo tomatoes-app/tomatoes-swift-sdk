@@ -3,7 +3,5 @@
 import PackageDescription
 
 let package = Package(
-    name: "tomatoes-swift-sdk",
-    dependencies : [],
-    exclude: ["Tests"]
+    name: "tomatoes-swift-sdk"
 )
