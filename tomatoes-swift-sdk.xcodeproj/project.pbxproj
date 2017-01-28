@@ -15,6 +15,24 @@
 		C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F51E3D4D7E0026A71D /* Network.swift */; };
 		C725A4FD1E3D4D7E0026A71D /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */; };
 		C725A4FE1E3D4D7E0026A71D /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */; };
+		C725A5061E3D59C20026A71D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5051E3D59C20026A71D /* Session.swift */; };
+		C725A5071E3D59C20026A71D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5051E3D59C20026A71D /* Session.swift */; };
+		C725A5091E3D59CC0026A71D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5081E3D59CC0026A71D /* User.swift */; };
+		C725A50A1E3D59CC0026A71D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5081E3D59CC0026A71D /* User.swift */; };
+		C725A50C1E3D59D80026A71D /* Tomato.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A50B1E3D59D80026A71D /* Tomato.swift */; };
+		C725A50D1E3D59D80026A71D /* Tomato.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A50B1E3D59D80026A71D /* Tomato.swift */; };
+		C725A50F1E3D59EA0026A71D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A50E1E3D59EA0026A71D /* Project.swift */; };
+		C725A5101E3D59EA0026A71D /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A50E1E3D59EA0026A71D /* Project.swift */; };
+		C725A5121E3D5A230026A71D /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5111E3D5A230026A71D /* Score.swift */; };
+		C725A5131E3D5A230026A71D /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5111E3D5A230026A71D /* Score.swift */; };
+		C725A5151E3D5A440026A71D /* PaginatedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5141E3D5A440026A71D /* PaginatedList.swift */; };
+		C725A5161E3D5A440026A71D /* PaginatedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5141E3D5A440026A71D /* PaginatedList.swift */; };
+		C725A5181E3D5E580026A71D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5171E3D5E580026A71D /* Counter.swift */; };
+		C725A5191E3D5E580026A71D /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A5171E3D5E580026A71D /* Counter.swift */; };
+		C725A51B1E3D5E7C0026A71D /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51A1E3D5E7C0026A71D /* Authorization.swift */; };
+		C725A51C1E3D5E7C0026A71D /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51A1E3D5E7C0026A71D /* Authorization.swift */; };
+		C725A51E1E3D61140026A71D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51D1E3D61140026A71D /* DateExtension.swift */; };
+		C725A51F1E3D61140026A71D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51D1E3D61140026A71D /* DateExtension.swift */; };
 		C7775D1A1E3CFE6900B55CC2 /* TomatoesiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */; };
 		C7775D1F1E3CFE6900B55CC2 /* TomatoesiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D1E1E3CFE6900B55CC2 /* TomatoesiOSTests.swift */; };
 		C7775D211E3CFE6900B55CC2 /* TomatoesiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -45,6 +63,15 @@
 		C725A4F41E3D4D7E0026A71D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C725A4F51E3D4D7E0026A71D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
+		C725A5051E3D59C20026A71D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		C725A5081E3D59CC0026A71D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C725A50B1E3D59D80026A71D /* Tomato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tomato.swift; sourceTree = "<group>"; };
+		C725A50E1E3D59EA0026A71D /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		C725A5111E3D5A230026A71D /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		C725A5141E3D5A440026A71D /* PaginatedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginatedList.swift; sourceTree = "<group>"; };
+		C725A5171E3D5E580026A71D /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		C725A51A1E3D5E7C0026A71D /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		C725A51D1E3D61140026A71D /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TomatoesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomatoesiOS.h; sourceTree = "<group>"; };
 		C7775D141E3CFE6900B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,12 +123,29 @@
 		C725A4F21E3D4D7E0026A71D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C725A5041E3D55A50026A71D /* Model */,
 				C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */,
-				C725A4F41E3D4D7E0026A71D /* Model.swift */,
 				C725A4F51E3D4D7E0026A71D /* Network.swift */,
 				C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */,
+				C725A51D1E3D61140026A71D /* DateExtension.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C725A5041E3D55A50026A71D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C725A4F41E3D4D7E0026A71D /* Model.swift */,
+				C725A5141E3D5A440026A71D /* PaginatedList.swift */,
+				C725A5051E3D59C20026A71D /* Session.swift */,
+				C725A5081E3D59CC0026A71D /* User.swift */,
+				C725A50B1E3D59D80026A71D /* Tomato.swift */,
+				C725A50E1E3D59EA0026A71D /* Project.swift */,
+				C725A5111E3D5A230026A71D /* Score.swift */,
+				C725A5171E3D5E580026A71D /* Counter.swift */,
+				C725A51A1E3D5E7C0026A71D /* Authorization.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C7775C971E3CF98200B55CC2 = {
@@ -352,10 +396,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C725A5061E3D59C20026A71D /* Session.swift in Sources */,
+				C725A5151E3D5A440026A71D /* PaginatedList.swift in Sources */,
+				C725A5181E3D5E580026A71D /* Counter.swift in Sources */,
+				C725A51B1E3D5E7C0026A71D /* Authorization.swift in Sources */,
 				C725A4F71E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */,
+				C725A51E1E3D61140026A71D /* DateExtension.swift in Sources */,
+				C725A5091E3D59CC0026A71D /* User.swift in Sources */,
 				C725A4FD1E3D4D7E0026A71D /* Tomatoes.swift in Sources */,
+				C725A50C1E3D59D80026A71D /* Tomato.swift in Sources */,
 				C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */,
+				C725A5121E3D5A230026A71D /* Score.swift in Sources */,
+				C725A50F1E3D59EA0026A71D /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,10 +424,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C725A5071E3D59C20026A71D /* Session.swift in Sources */,
+				C725A5161E3D5A440026A71D /* PaginatedList.swift in Sources */,
+				C725A5191E3D5E580026A71D /* Counter.swift in Sources */,
+				C725A51C1E3D5E7C0026A71D /* Authorization.swift in Sources */,
 				C725A4F81E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */,
+				C725A51F1E3D61140026A71D /* DateExtension.swift in Sources */,
+				C725A50A1E3D59CC0026A71D /* User.swift in Sources */,
 				C725A4FE1E3D4D7E0026A71D /* Tomatoes.swift in Sources */,
+				C725A50D1E3D59D80026A71D /* Tomato.swift in Sources */,
 				C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */,
+				C725A5131E3D5A230026A71D /* Score.swift in Sources */,
+				C725A5101E3D59EA0026A71D /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

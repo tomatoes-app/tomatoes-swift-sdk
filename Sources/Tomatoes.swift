@@ -16,6 +16,11 @@ public enum Tomatoes {
     
     static let baseURLString = "http://www.tomato.es"
     static let tokenKey = "tomatoes_token"
+    static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+
+    public static var isAuthenticated: Bool {
+        return KeychainSwift().get(Tomatoes.tokenKey) != nil
+    }
     
     /// Creates a new session using a third party auth provider token.
     /// If a user associated to the access token doesn't exist, a new user will be created.
@@ -99,7 +104,7 @@ public enum Tomatoes {
         default: return object
         }
     }
-    
+
     func handleSession(result: Any?) {
         switch self {
         case .createSession:
