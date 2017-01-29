@@ -9,9 +9,9 @@
 import Foundation
 
 public class Counter: Deserializable {
-    public var day: Int?
-    public var week: Int?
-    public var month: Int?
+    public private(set) var day: Int?
+    public private(set) var week: Int?
+    public private(set) var month: Int?
     
     required public init?(json: [String : Any]?) {
         day = json?["day"] as? Int

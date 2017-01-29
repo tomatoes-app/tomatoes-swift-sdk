@@ -33,6 +33,8 @@
 		C725A51C1E3D5E7C0026A71D /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51A1E3D5E7C0026A71D /* Authorization.swift */; };
 		C725A51E1E3D61140026A71D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51D1E3D61140026A71D /* DateExtension.swift */; };
 		C725A51F1E3D61140026A71D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51D1E3D61140026A71D /* DateExtension.swift */; };
+		C75333451E3E70FD00AF4DD2 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75333441E3E70FD00AF4DD2 /* Error.swift */; };
+		C75333461E3E710100AF4DD2 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75333441E3E70FD00AF4DD2 /* Error.swift */; };
 		C7775D1A1E3CFE6900B55CC2 /* TomatoesiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */; };
 		C7775D1F1E3CFE6900B55CC2 /* TomatoesiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D1E1E3CFE6900B55CC2 /* TomatoesiOSTests.swift */; };
 		C7775D211E3CFE6900B55CC2 /* TomatoesiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +74,7 @@
 		C725A5171E3D5E580026A71D /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		C725A51A1E3D5E7C0026A71D /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		C725A51D1E3D61140026A71D /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		C75333441E3E70FD00AF4DD2 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TomatoesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomatoesiOS.h; sourceTree = "<group>"; };
 		C7775D141E3CFE6900B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 				C725A5111E3D5A230026A71D /* Score.swift */,
 				C725A5171E3D5E580026A71D /* Counter.swift */,
 				C725A51A1E3D5E7C0026A71D /* Authorization.swift */,
+				C75333441E3E70FD00AF4DD2 /* Error.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -408,6 +412,7 @@
 				C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5121E3D5A230026A71D /* Score.swift in Sources */,
+				C75333451E3E70FD00AF4DD2 /* Error.swift in Sources */,
 				C725A50F1E3D59EA0026A71D /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +441,7 @@
 				C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5131E3D5A230026A71D /* Score.swift in Sources */,
+				C75333461E3E710100AF4DD2 /* Error.swift in Sources */,
 				C725A5101E3D59EA0026A71D /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

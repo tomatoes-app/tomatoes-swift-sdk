@@ -9,10 +9,10 @@
 import Foundation
 
 public class Authorization: Deserializable {
-    public var provider: Provider?
-    public var uid: String?
-    public var nickname: String?
-    public var image: String?
+    public private(set) var provider: Provider?
+    public private(set) var uid: String?
+    public private(set) var nickname: String?
+    public private(set) var image: String?
     
     required public init?(json: [String : Any]?) {
         let providerString = json?["provider"] as? String ?? ""

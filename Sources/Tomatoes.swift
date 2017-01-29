@@ -12,15 +12,11 @@ import Foundation
  Wrapper around the tomato.es web API. 
  http://www.tomato.es/pages/api_reference
  */
-public enum Tomatoes {
+enum Tomatoes {
     
     static let baseURLString = "http://www.tomato.es"
     static let tokenKey = "tomatoes_token"
     static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-
-    public static var isAuthenticated: Bool {
-        return KeychainSwift().get(Tomatoes.tokenKey) != nil
-    }
     
     /// Creates a new session using a third party auth provider token.
     /// If a user associated to the access token doesn't exist, a new user will be created.
@@ -61,7 +57,7 @@ public enum Tomatoes {
     
     // leaderboard
     /// The request returns an object of type PaginatedList with the users leaderboard for the selected period (Array of Score). The period segment could be daily, weekly, monthly, and overall. The list of leaderboard items is ordered by descending score and it's paginated. Each page contains 25 records, by default the first page is retuned, use the page parameter to get any other page in the range [1, totalPages].
-    case readLeaderboard(period: Period)
+    case readLeaderboard(period: Period, page: UInt)
     
     var path: String {
         switch self {
@@ -78,7 +74,7 @@ public enum Tomatoes {
         case .updateProject(let id): return "/api/projects/\(id)"
         case .destroyProject(let id): return "/api/projects/\(id)"
 
-        case .readLeaderboard(let period): return "/api/leaderboard/\(period.rawValue)"
+        case .readLeaderboard(let period, _): return "/api/leaderboard/\(period.rawValue)"
         }
     }
     
@@ -118,7 +114,7 @@ public enum Tomatoes {
         }
     }
     
-    public func request(_ parameters: JSONObject? = nil, completion: ResponseBlock?) {
+    func request(_ parameters: JSONObject? = nil, completion: ResponseBlock?) {
         guard let URL = URL(string: Tomatoes.baseURLString) else { return }
         let token = KeychainSwift().get(Tomatoes.tokenKey) ?? ""
         let url = URL.appendingPathComponent(path)

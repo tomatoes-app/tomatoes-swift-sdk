@@ -9,10 +9,12 @@
 import Foundation
 
 public class PaginatedList<T: Deserializable>: Deserializable {
-    public var items: [T]?
-    public var totalPages: Int?
-    public var currentPage: Int?
-    public var totalCount: Int?
+    public private(set) var items: [T]?
+    public private(set) var totalPages: Int?
+    public private(set) var currentPage: Int?
+    public private(set) var totalCount: Int?
+    
+    public required init() {}
     
     required public convenience init?(json: [String : Any]?) {
         self.init(json: json, root: "")

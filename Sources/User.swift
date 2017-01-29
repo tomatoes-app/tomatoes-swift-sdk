@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class User: Deserializable {
-    public var id: String?
+public class User: Deserializable, Serializable {
+    public private(set) var id: String?
     public var name: String?
     public var email: String?
     public var image: String?
@@ -20,12 +20,14 @@ public class User: Deserializable {
     public var workHoursPerDay: Int?
     public var averageHourlyRate: Int?
     public var currency: String?
-    public var currencyUnit: String?
-    public var tomatoesCounters: Counter?
-    public var authorizations: [Authorization]?
-    public var createdAt: Date?
-    public var updatedAt: Date?
+    public private(set) var currencyUnit: String?
+    public private(set) var tomatoesCounters: Counter?
+    public private(set) var authorizations: [Authorization]?
+    public private(set) var createdAt: Date?
+    public private(set) var updatedAt: Date?
 
+    public init() {}
+    
     required public init?(json: [String : Any]?) {
         id = json?["id"] as? String
         name = json?["name"] as? String
@@ -45,4 +47,29 @@ public class User: Deserializable {
         let updated = json?["updated_at"] as? String
         updatedAt = Date.date(from: updated, format: Tomatoes.dateFormat)
     }
+    
+    public func parameters() -> [String : Any] {
+        var params = [String: Any]()
+        params["name"] = name
+        params["email"] = email
+        params["image"] = image
+        params["time_zone"] = timezone
+        params["color"] = color
+        params["work_hours_per_day"] = workHoursPerDay
+        params["average_hourly_rate"] = averageHourlyRate
+        params["currency"] = currency
+        params["volume"] = volume
+        params["ticking"] = ticking
+        return params
+    }
+    
+    public class func read(completion: ResponseBlock?) {
+        Tomatoes.readUser.request(completion: completion)
+    }
+    
+    public func update(completion: ResponseBlock?) {
+        let params = ["user": parameters()]
+        Tomatoes.updateUser.request(params, completion: completion)
+    }
 }
+

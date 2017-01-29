@@ -35,9 +35,17 @@ struct Network {
     static func perfomRequest(_ url: URL, accessToken: String? = nil, parameters: JSONObject? = nil, method: String, completion: (ResponseBlock)?) {
         var request = URLRequest(url: url)
         request.httpMethod = method
-        request.httpBody = Network.serialize(parameters: parameters)
+        if method == "GET" {
+            if let parameters = parameters, !parameters.isEmpty {
+                let urlComponents = URLComponents(string: url.absoluteString + Network.query(parameters))
+                request.url = urlComponents?.url
+            }
+        } else {
+            request.httpBody = Network.serialize(parameters: parameters)
+        }
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json", forHTTPHeaderField: "Accept")
+        
         if let accessToken = accessToken {
             request.setValue(accessToken, forHTTPHeaderField: "Authorization")
         }
@@ -52,5 +60,11 @@ struct Network {
             }
         })
         task.resume()
+    }
+    
+    static func query(_ parameters: JSONObject) -> String {
+        return parameters.flatMap { (key, value) -> String in
+                return "\(key)=\(value)"
+                }.joined(separator: "&")
     }
 }
