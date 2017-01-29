@@ -16,6 +16,6 @@ public class Counter: Deserializable {
     required public init?(json: [String : Any]?) {
         day = json?["day"] as? Int
         week = json?["week"] as? Int
-        month = json?["week"] as? Int
+        month = json?["month"] as? Int
     }
 }

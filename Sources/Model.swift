@@ -21,6 +21,7 @@ public protocol Serializable {
 
 public enum Provider: String {
     case github
+    case twitter
 }
 
 public enum Period: String {

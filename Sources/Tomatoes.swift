@@ -16,7 +16,7 @@ public enum Tomatoes {
     
     static let baseURLString = "http://www.tomato.es"
     static let tokenKey = "tomatoes_token"
-    static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+    static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
 
     public static var isAuthenticated: Bool {
         return KeychainSwift().get(Tomatoes.tokenKey) != nil
@@ -105,7 +105,7 @@ public enum Tomatoes {
         }
     }
 
-    func handleSession(result: Any?) {
+    func handleSession(result: Any? = nil) {
         switch self {
         case .createSession:
             if let token = result as? String {
@@ -125,6 +125,7 @@ public enum Tomatoes {
         
         Network.perfomRequest(url, accessToken: token, parameters: parameters, method: method) { (object, error) in
             guard let object = object as? JSONObject else {
+                self.handleSession()
                 completion?(nil, error)
                 return
             }
