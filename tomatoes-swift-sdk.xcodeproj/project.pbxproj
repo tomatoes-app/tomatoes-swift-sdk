@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C71D7F211E3E8B03002CB37B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F201E3E8B03002CB37B /* README.md */; };
-		C71D7F221E3E8B03002CB37B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F201E3E8B03002CB37B /* README.md */; };
+		C71D7F241E3E95D4002CB37B /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71D7F231E3E95D4002CB37B /* OHHTTPStubs.framework */; };
+		C71D7F261E3E95F1002CB37B /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71D7F251E3E95F1002CB37B /* OHHTTPStubs.framework */; };
+		C71D7F281E3E965A002CB37B /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F271E3E965A002CB37B /* UserTests.swift */; };
+		C71D7F291E3E965A002CB37B /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F271E3E965A002CB37B /* UserTests.swift */; };
 		C725A4F71E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
 		C725A4F81E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
 		C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Model.swift */; };
@@ -37,11 +39,9 @@
 		C725A51F1E3D61140026A71D /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A51D1E3D61140026A71D /* DateExtension.swift */; };
 		C75333451E3E70FD00AF4DD2 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75333441E3E70FD00AF4DD2 /* Error.swift */; };
 		C75333461E3E710100AF4DD2 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75333441E3E70FD00AF4DD2 /* Error.swift */; };
-		C7775D1A1E3CFE6900B55CC2 /* TomatoesiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */; };
-		C7775D1F1E3CFE6900B55CC2 /* TomatoesiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D1E1E3CFE6900B55CC2 /* TomatoesiOSTests.swift */; };
+		C7775D1A1E3CFE6900B55CC2 /* Tomatoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D111E3CFE6900B55CC2 /* Tomatoes.framework */; };
 		C7775D211E3CFE6900B55CC2 /* TomatoesiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7775D371E3CFFF400B55CC2 /* TomatoesMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D2E1E3CFFF300B55CC2 /* TomatoesMacOS.framework */; };
-		C7775D3C1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */; };
+		C7775D371E3CFFF400B55CC2 /* Tomatoes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7775D2E1E3CFFF300B55CC2 /* Tomatoes.framework */; };
 		C7775D3E1E3CFFF400B55CC2 /* TomatoesMacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C7775D301E3CFFF300B55CC2 /* TomatoesMacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,6 +64,9 @@
 
 /* Begin PBXFileReference section */
 		C71D7F201E3E8B03002CB37B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		C71D7F231E3E95D4002CB37B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		C71D7F251E3E95F1002CB37B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		C71D7F271E3E965A002CB37B /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTests.swift; path = Sources/UserTests.swift; sourceTree = SOURCE_ROOT; };
 		C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 		C725A4F41E3D4D7E0026A71D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C725A4F51E3D4D7E0026A71D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -78,17 +81,15 @@
 		C725A51A1E3D5E7C0026A71D /* Authorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		C725A51D1E3D61140026A71D /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		C75333441E3E70FD00AF4DD2 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TomatoesiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7775D111E3CFE6900B55CC2 /* Tomatoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tomatoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D131E3CFE6900B55CC2 /* TomatoesiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomatoesiOS.h; sourceTree = "<group>"; };
 		C7775D141E3CFE6900B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7775D191E3CFE6900B55CC2 /* TomatoesiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoesiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7775D1E1E3CFE6900B55CC2 /* TomatoesiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoesiOSTests.swift; sourceTree = "<group>"; };
 		C7775D201E3CFE6900B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7775D2E1E3CFFF300B55CC2 /* TomatoesMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TomatoesMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7775D2E1E3CFFF300B55CC2 /* Tomatoes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tomatoes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7775D301E3CFFF300B55CC2 /* TomatoesMacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TomatoesMacOS.h; sourceTree = "<group>"; };
 		C7775D311E3CFFF300B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7775D361E3CFFF300B55CC2 /* TomatoesMacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomatoesMacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoesMacOSTests.swift; sourceTree = "<group>"; };
 		C7775D3D1E3CFFF400B55CC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7775D1A1E3CFE6900B55CC2 /* TomatoesiOS.framework in Frameworks */,
+				C7775D1A1E3CFE6900B55CC2 /* Tomatoes.framework in Frameworks */,
+				C71D7F241E3E95D4002CB37B /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7775D371E3CFFF400B55CC2 /* TomatoesMacOS.framework in Frameworks */,
+				C7775D371E3CFFF400B55CC2 /* Tomatoes.framework in Frameworks */,
+				C71D7F261E3E95F1002CB37B /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,9 +175,9 @@
 		C7775CA51E3CF9AC00B55CC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */,
+				C7775D111E3CFE6900B55CC2 /* Tomatoes.framework */,
 				C7775D191E3CFE6900B55CC2 /* TomatoesiOSTests.xctest */,
-				C7775D2E1E3CFFF300B55CC2 /* TomatoesMacOS.framework */,
+				C7775D2E1E3CFFF300B55CC2 /* Tomatoes.framework */,
 				C7775D361E3CFFF300B55CC2 /* TomatoesMacOSTests.xctest */,
 			);
 			name = Products;
@@ -192,7 +195,7 @@
 		C7775D1D1E3CFE6900B55CC2 /* TomatoesiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7775D1E1E3CFE6900B55CC2 /* TomatoesiOSTests.swift */,
+				C71D7F231E3E95D4002CB37B /* OHHTTPStubs.framework */,
 				C7775D201E3CFE6900B55CC2 /* Info.plist */,
 			);
 			path = TomatoesiOSTests;
@@ -210,7 +213,7 @@
 		C7775D3A1E3CFFF400B55CC2 /* TomatoesMacOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7775D3B1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift */,
+				C71D7F251E3E95F1002CB37B /* OHHTTPStubs.framework */,
 				C7775D3D1E3CFFF400B55CC2 /* Info.plist */,
 			);
 			path = TomatoesMacOSTests;
@@ -219,6 +222,7 @@
 		C7775D461E3D006900B55CC2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				C71D7F271E3E965A002CB37B /* UserTests.swift */,
 			);
 			name = Tests;
 			path = ../Tests;
@@ -261,7 +265,7 @@
 			);
 			name = TomatoesiOS;
 			productName = TomatoesiOS;
-			productReference = C7775D111E3CFE6900B55CC2 /* TomatoesiOS.framework */;
+			productReference = C7775D111E3CFE6900B55CC2 /* Tomatoes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7775D181E3CFE6900B55CC2 /* TomatoesiOSTests */ = {
@@ -297,7 +301,7 @@
 			);
 			name = TomatoesMacOS;
 			productName = TomatoesMacOS;
-			productReference = C7775D2E1E3CFFF300B55CC2 /* TomatoesMacOS.framework */;
+			productReference = C7775D2E1E3CFFF300B55CC2 /* Tomatoes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C7775D351E3CFFF300B55CC2 /* TomatoesMacOSTests */ = {
@@ -416,7 +420,6 @@
 				C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5121E3D5A230026A71D /* Score.swift in Sources */,
-				C71D7F211E3E8B03002CB37B /* README.md in Sources */,
 				C75333451E3E70FD00AF4DD2 /* Error.swift in Sources */,
 				C725A50F1E3D59EA0026A71D /* Project.swift in Sources */,
 			);
@@ -426,7 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7775D1F1E3CFE6900B55CC2 /* TomatoesiOSTests.swift in Sources */,
+				C71D7F281E3E965A002CB37B /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +449,6 @@
 				C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5131E3D5A230026A71D /* Score.swift in Sources */,
-				C71D7F221E3E8B03002CB37B /* README.md in Sources */,
 				C75333461E3E710100AF4DD2 /* Error.swift in Sources */,
 				C725A5101E3D59EA0026A71D /* Project.swift in Sources */,
 			);
@@ -456,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7775D3C1E3CFFF400B55CC2 /* TomatoesMacOSTests.swift in Sources */,
+				C71D7F291E3E965A002CB37B /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +544,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Tomatoes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -601,7 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Tomatoes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -641,6 +643,10 @@
 				DEVELOPMENT_TEAM = WN6G7U99K4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -697,6 +703,10 @@
 				DEVELOPMENT_TEAM = WN6G7U99K4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -772,8 +782,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gii.TomatoesMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
+				PRODUCT_NAME = Tomatoes;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -831,8 +841,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gii.TomatoesMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
+				PRODUCT_NAME = Tomatoes;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -871,6 +881,10 @@
 				DEVELOPMENT_TEAM = WN6G7U99K4;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -928,6 +942,10 @@
 				DEVELOPMENT_TEAM = WN6G7U99K4;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

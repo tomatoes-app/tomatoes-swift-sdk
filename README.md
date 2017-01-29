@@ -22,7 +22,7 @@ To integrate Tomatoes Swift SDK into your Xcode project using Carthage, specify 
 github "tomatoes-app/tomatoes-swift-sdk" ~> 0.1.0
 ```
 
-Run `carthage update` to build the framework and drag the built `TomatoesiOS.framework` or `TomatoesMacOS.framework` into your Xcode project.
+Run `carthage update` to build the framework and drag the built `Tomatoes.framework` into your Xcode project.
 
 ### Swift Package Manager
 
