@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C71D7F211E3E8B03002CB37B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F201E3E8B03002CB37B /* README.md */; };
+		C71D7F221E3E8B03002CB37B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F201E3E8B03002CB37B /* README.md */; };
 		C725A4F71E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
 		C725A4F81E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
 		C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Model.swift */; };
@@ -61,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C71D7F201E3E8B03002CB37B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
 		C725A4F41E3D4D7E0026A71D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		C725A4F51E3D4D7E0026A71D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 				C725A4F51E3D4D7E0026A71D /* Network.swift */,
 				C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */,
 				C725A51D1E3D61140026A71D /* DateExtension.swift */,
+				C71D7F201E3E8B03002CB37B /* README.md */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -412,6 +416,7 @@
 				C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5121E3D5A230026A71D /* Score.swift in Sources */,
+				C71D7F211E3E8B03002CB37B /* README.md in Sources */,
 				C75333451E3E70FD00AF4DD2 /* Error.swift in Sources */,
 				C725A50F1E3D59EA0026A71D /* Project.swift in Sources */,
 			);
@@ -441,6 +446,7 @@
 				C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */,
 				C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5131E3D5A230026A71D /* Score.swift in Sources */,
+				C71D7F221E3E8B03002CB37B /* README.md in Sources */,
 				C75333461E3E710100AF4DD2 /* Error.swift in Sources */,
 				C725A5101E3D59EA0026A71D /* Project.swift in Sources */,
 			);
