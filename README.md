@@ -48,5 +48,4 @@ User.read { (result, error) in
         print(user)
     }
 }
-}
 ````
