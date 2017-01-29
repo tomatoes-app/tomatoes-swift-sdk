@@ -32,11 +32,10 @@ Add the following text to your `Package.swift` file and run `swift build`.
 import PackageDescription
 
 let package = Package(
-name: "tomatoes-swift-sdk",
-dependencies: [
-.Package(url: "https://github.com/tomatoes-app/tomatoes-swift-sdk.git", Version(0,1,0))
-]
-)
+    name: "tomatoes-swift-sdk",
+    dependencies: [
+        .Package(url: "https://github.com/tomatoes-app/tomatoes-swift-sdk.git", Version(0,1,0))
+    ])
 ````
 ## Usage
 
