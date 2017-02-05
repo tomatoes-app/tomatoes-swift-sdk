@@ -1,17 +1,17 @@
 {
-    "scores": [
-               {
-               "user": {
-               "id": "586c2be37c8402b5d1db406c",
-               "name": "Giovanni Cappellotto",
-               "image": "http://tomato.es/images/users/586c2be37c8402b5d1db406c.png"
-               },
-               "score": 2
-               }
-               ],
-    "pagination": {
-        "current_page": 1,
-        "total_pages": 1,
-        "total_count": 1
+  "scores": [
+    {
+      "user": {
+        "id": "586c2be37c8402b5d1db406c",
+        "name": "Giovanni Cappellotto",
+        "image": "http://tomato.es/images/users/586c2be37c8402b5d1db406c.png"
+      },
+      "score": 2
     }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 1,
+    "total_count": 1
+  }
 }
