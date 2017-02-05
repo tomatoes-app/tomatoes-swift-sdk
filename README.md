@@ -43,9 +43,10 @@ dependencies: [
 ### Request user info
 
 ```Swift
-User.read { (result, error) in
-    if let user = result as? User {
-        print(user)
+User.read { (result) in
+    switch result {
+    case .success(let user): print(user.name)
+    case .failure(let error): print(error?.localizedDescription)
     }
 }
 ````

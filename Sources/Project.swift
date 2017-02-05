@@ -46,8 +46,8 @@ public class Project: Deserializable, Serializable {
     
     class func responseBlock(_ completion: ProjectBlock?) -> ResponseBlock {
         return { (result, error) in
-            if let tomato = Project(json: result) {
-                completion?(.success(tomato))
+            if let project = Project(json: result) {
+                completion?(.success(project))
             } else {
                 completion?(.failure(error))
             }
