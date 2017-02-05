@@ -69,8 +69,9 @@ public class User: Deserializable, Serializable {
         Tomatoes.readUser.request { (result, error) in
             if let user = User(json: result) {
                 completion?(.success(user))
+            } else {
+                completion?(.failure(error))
             }
-            completion?(.failure(error))
         }
     }
     
@@ -79,8 +80,9 @@ public class User: Deserializable, Serializable {
         Tomatoes.updateUser.request(params) { (result, error) in
             if let user = User(json: result) {
                 completion?(.success(user))
+            } else {
+                completion?(.failure(error))
             }
-            completion?(.failure(error))
         }
     }
 }

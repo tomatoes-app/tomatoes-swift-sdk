@@ -48,8 +48,9 @@ public class Project: Deserializable, Serializable {
         return { (result, error) in
             if let tomato = Project(json: result) {
                 completion?(.success(tomato))
+            } else {
+                completion?(.failure(error))
             }
-            completion?(.failure(error))
         }
     }
 
@@ -79,17 +80,19 @@ public class Project: Deserializable, Serializable {
         Tomatoes.destroyProject(id: id).request(self.parameters()) { (_, error) in
             if let error = error {
                 completion?(.failure(error))
+            } else {
+                completion?(.success(true))
             }
-            completion?(.success(true))
         }
     }
     
     public class func items(page: UInt, completion: ProjectsBlock?) {
         Tomatoes.readProjects(page: page).request { (result, error) in
             if let projectsList =  PaginatedList<Project>.init(json: result, root: "projects") {
-                completion?(.success(tomatoesList))
+                completion?(.success(projectsList))
+            } else {
+                completion?(.failure(error))
             }
-            completion?(.failure(error))
         }
     }
 }

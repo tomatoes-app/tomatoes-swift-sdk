@@ -39,8 +39,9 @@ public class Tomato: Deserializable, Serializable {
         return { (result, error) in
             if let tomato = Tomato(json: result) {
                 completion?(.success(tomato))
+            } else {
+                completion?(.failure(error))
             }
-            completion?(.failure(error))
         }
     }
     
@@ -70,8 +71,9 @@ public class Tomato: Deserializable, Serializable {
         Tomatoes.destroyTomato(id: id).request(self.parameters()) { (_, error) in
             if let error = error {
                 completion?(.failure(error))
+            } else {
+                completion?(.success(true))
             }
-            completion?(.success(true))
         }
     }
     
@@ -79,9 +81,9 @@ public class Tomato: Deserializable, Serializable {
         Tomatoes.readTomatoes(page: page).request  { (result, error) in
             if let tomatoesList =  PaginatedList<Tomato>.init(json: result, root: "tomatoes") {
                 completion?(.success(tomatoesList))
+            } else {
+                completion?(.failure(error))
             }
-            completion?(.failure(error))
         }
     }
-    
 }
