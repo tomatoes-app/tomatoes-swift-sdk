@@ -1,9 +1,12 @@
 {
-    "id": "1",
-    "name": "Web app",
-    "created_at": "2016-10-09T04:36:07.787Z",
-    "updated_at": "2016-10-09T04:36:07.787Z",
-    "tags": ["ruby", "acme"],
-    "money_budget": 1200,
-    "time_budget": 120
+  "id": "1",
+  "name": "Web app",
+  "created_at": "2016-10-09T04:36:07.787Z",
+  "updated_at": "2016-10-09T04:36:07.787Z",
+  "tags": [
+    "ruby",
+    "acme"
+  ],
+  "money_budget": 1200,
+  "time_budget": 120
 }
