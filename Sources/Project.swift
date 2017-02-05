@@ -88,7 +88,7 @@ public class Project: Deserializable, Serializable {
     
     public class func items(page: UInt, completion: ProjectsBlock?) {
         Tomatoes.readProjects(page: page).request { (result, error) in
-            if let projectsList =  PaginatedList<Project>.init(json: result, root: "projects") {
+            if let projectsList = PaginatedList<Project>.init(json: result, root: "projects") {
                 completion?(.success(projectsList))
             } else {
                 completion?(.failure(error))

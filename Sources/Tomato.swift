@@ -79,7 +79,7 @@ public class Tomato: Deserializable, Serializable {
     
     public class func items(page: UInt, completion: TomatoesBlock?) {
         Tomatoes.readTomatoes(page: page).request  { (result, error) in
-            if let tomatoesList =  PaginatedList<Tomato>.init(json: result, root: "tomatoes") {
+            if let tomatoesList = PaginatedList<Tomato>.init(json: result, root: "tomatoes") {
                 completion?(.success(tomatoesList))
             } else {
                 completion?(.failure(error))

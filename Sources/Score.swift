@@ -21,7 +21,7 @@ public class Score: Deserializable {
     
     public class func items(period: Period, page: UInt, completion: ScoresBlock?) {
         Tomatoes.readLeaderboard(period: period, page: page).request { (result, error) in
-            if let scoresList =  PaginatedList<Score>.init(json: result, root: "scores") {
+            if let scoresList = PaginatedList<Score>.init(json: result, root: "scores") {
                 completion?(.success(scoresList))
             } else {
                 completion?(.failure(error))
