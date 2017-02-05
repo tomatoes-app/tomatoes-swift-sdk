@@ -1,0 +1,29 @@
+{
+    "id": "57f9c7f57c8402cc74b2cc5c",
+    "name": "Giovanni Cappellotto",
+    "email": null,
+    "image": "https://avatars.githubusercontent.com/u/153842?v=3",
+    "time_zone": null,
+    "color": "#000000",
+    "volume": 2,
+    "ticking": false,
+    "work_hours_per_day": null,
+    "average_hourly_rate": null,
+    "currency": "USD",
+    "currency_unit": "$",
+    "tomatoes_counters": {
+        "day": 0,
+        "week": 0,
+        "month": 2
+    },
+    "authorizations": [
+                       {
+                       "provider": "github",
+                       "uid": "153842",
+                       "nickname": "potomak",
+                       "image": "https://avatars.githubusercontent.com/u/153842?v=3"
+                       }
+                       ],
+    "created_at": "2016-10-09T04:30:45.300Z",
+    "updated_at": "2016-10-09T04:30:45.300Z"
+}

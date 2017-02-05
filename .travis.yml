@@ -1,0 +1,8 @@
+language: objective-c
+xcode_project: tomatoes-swift-sdk.xcodeproj
+xcode_scheme: TomatoesiOS
+osx_image: xcode8.2
+
+script:
+  - carthage update
+  - xcodebuild clean test -project tomatoes-swift-sdk.xcodeproj -scheme TomatoesiOS -destination 'platform=iOS Simulator,name=iPad Retina,OS=10.2' CODE_SIGNING_REQUIRED=NO

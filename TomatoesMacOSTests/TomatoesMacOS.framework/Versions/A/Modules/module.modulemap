@@ -1,0 +1,10 @@
+framework module TomatoesMacOS {
+  umbrella header "TomatoesMacOS.h"
+
+  export *
+  module * { export * }
+}
+
+module TomatoesMacOS.Swift {
+    header "TomatoesMacOS-Swift.h"
+}

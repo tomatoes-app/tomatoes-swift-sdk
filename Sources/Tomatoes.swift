@@ -78,6 +78,19 @@ enum Tomatoes {
         }
     }
     
+    var stubFileName: String {
+        switch self {
+        case .readTomatoes: return "readTomatoes.json"
+        case .readProjects: return "readProjects.json"
+        case .readTomato: return "readTomato.json"
+        case .updateTomato: return "updateTomato.json"
+        case .readProject: return "readProject.json"
+        case .updateProject: return "updateProject.json"
+        case .readLeaderboard: return "readLeaderboard.json"
+        default: return "\(self).json"
+        }
+    }
+    
     var method: String {
         switch self {
         case .readUser, .readTomatoes, .readTomato, .readProjects, .readProject, .readLeaderboard: return "GET"

@@ -44,23 +44,13 @@ public class Project: Deserializable, Serializable {
         return params
     }
     
-    class func responseBlock(_ completion: ProjectBlock?) -> ResponseBlock {
-        return { (result, error) in
-            if let project = Project(json: result) {
-                completion?(.success(project))
-            } else {
-                completion?(.failure(error))
-            }
-        }
-    }
-
     public func create(completion: ProjectBlock?) {
         let params = ["project": parameters()]
-        Tomatoes.createProject.request(params, completion: Project.responseBlock(completion))
+        Tomatoes.createProject.request(params, completion: responseBlock(completion))
     }
     
     public class func read(id: String, completion: ProjectBlock?) {
-        Tomatoes.readProject(id: id).request(completion: Project.responseBlock(completion))
+        Tomatoes.readProject(id: id).request(completion: responseBlock(completion))
     }
     
     public func update(completion: ProjectBlock?) {
@@ -69,10 +59,10 @@ public class Project: Deserializable, Serializable {
             return
         }
         let params = ["project": parameters()]
-        Tomatoes.updateProject(id: id).request(params, completion: Project.responseBlock(completion))
+        Tomatoes.updateProject(id: id).request(params, completion: responseBlock(completion))
     }
     
-    public func destroy(completion: SuccessBlock?) {
+    public func destroy(completion: EmptyResultBlock?) {
         guard let id = id else {
             completion?(.failure(TomatoesError.model("Project id not found.")))
             return
@@ -81,7 +71,7 @@ public class Project: Deserializable, Serializable {
             if let error = error {
                 completion?(.failure(error))
             } else {
-                completion?(.success(true))
+                completion?(.success)
             }
         }
     }
