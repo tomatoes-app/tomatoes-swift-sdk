@@ -19,7 +19,7 @@ $ brew install carthage
 To integrate Tomatoes Swift SDK into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "tomatoes-app/tomatoes-swift-sdk" ~> 0.1.0
+github "tomatoes-app/tomatoes-swift-sdk" ~> 0.2.1
 ```
 
 Run `carthage update` to build the framework and drag the built `Tomatoes.framework` into your Xcode project.
