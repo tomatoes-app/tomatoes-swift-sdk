@@ -34,7 +34,7 @@ import PackageDescription
 let package = Package(
     name: "tomatoes-swift-sdk",
     dependencies: [
-        .Package(url: "https://github.com/tomatoes-app/tomatoes-swift-sdk.git", Version(0,1,0))
+        .Package(url: "https://github.com/tomatoes-app/tomatoes-swift-sdk.git", Version(0,2,1))
     ])
 ````
 ## Usage
