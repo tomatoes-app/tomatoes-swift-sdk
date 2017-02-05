@@ -1,21 +1,24 @@
 {
-    "tomatoes": [
-                 {
-                 "id": "57f9c9377c8402dd306d1c8b",
-                 "created_at": "2016-10-09T04:36:07.787Z",
-                 "updated_at": "2016-10-09T04:36:07.787Z",
-                 "tags": ["one", "two"]
-                 },
-                 {
-                 "id": "57f9c9187c8402dd306d1c88",
-                 "created_at": "2016-10-09T04:35:36.952Z",
-                 "updated_at": "2016-10-09T04:35:36.952Z",
-                 "tags": []
-                 }
-                 ],
-    "pagination": {
-        "current_page": 1,
-        "total_pages": 1,
-        "total_count": 2
+  "tomatoes": [
+    {
+      "id": "57f9c9377c8402dd306d1c8b",
+      "created_at": "2016-10-09T04:36:07.787Z",
+      "updated_at": "2016-10-09T04:36:07.787Z",
+      "tags": [
+        "one",
+        "two"
+      ]
+    },
+    {
+      "id": "57f9c9187c8402dd306d1c88",
+      "created_at": "2016-10-09T04:35:36.952Z",
+      "updated_at": "2016-10-09T04:35:36.952Z",
+      "tags": []
     }
+  ],
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 1,
+    "total_count": 2
+  }
 }
