@@ -1,7 +1,7 @@
 # Tomatoes Swift SDK
 [![Build Status](https://travis-ci.org/tomatoes-app/tomatoes-swift-sdk.svg?branch=master)](https://travis-ci.org/tomatoes-app/tomatoes-swift-sdk)
 
-The Tomatoes Swift SDK allows developers to quickly add Tomatoes services to their Swift applications. 
+The Tomatoes Swift SDK allows developers to quickly integrate Tomatoes services into their Swift applications. 
 See [API reference](http://www.tomato.es/pages/api_reference) for more details.
 
 ## Requirements
@@ -30,7 +30,7 @@ Run `carthage update` to build the framework and drag the built `Tomatoes.framew
 
 ### Swift Package Manager
 
-Add the following text to your `Package.swift` file and run `swift build`.
+Add the following code to your `Package.swift` file and run `swift build`.
 
 ```Swift
 import PackageDescription
@@ -43,7 +43,7 @@ let package = Package(
 ```
 ### App Transport Security
 
-App Transport Security was introduced with iOS 9 to enforce secure Internet connections. To securely connect to Tomatoes, add the following exception to your application's `Info.plist` file.
+App Transport Security was introduced with iOS 9 to enforce secure Internet connections, but Tomatoes doesn't support HTTPS yet. Allow insecure connections to Tomatoes by adding the following exception to your application's `Info.plist` file.
 
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -66,9 +66,11 @@ App Transport Security was introduced with iOS 9 to enforce secure Internet conn
 ## Usage
 Review the iOS [sample application](https://github.com/tomatoes-app/tomatoes-ios)
 
-### Create a session
-To enstablish a Tomatoes session implement the GitHub auth and retrive the access token, see [GitHub doc](https://developer.github.com/v3/oauth_authorizations/). Leave the default scope. 
-Use the GitHub access token to create a session as follow:
+### Create a Tomatoes session
+
+To establish a new Tomatoes session you'll need to implement GitHub auth and retrieve a GitHub user access token, see [GitHub doc](https://developer.github.com/v3/oauth_authorizations/). Leave the default scope.
+
+Then you can use the GitHub access token to create a new Tomatoes session as follow:
 
 ```Swift
  let session = Session(provider: .github, accessToken: <github-access-token>)
@@ -79,7 +81,7 @@ Use the GitHub access token to create a session as follow:
    }
  }
 ```
-__Note: The token return from Tomatoes will be automaically stored on keychain and applied to the authenticated requests.__
+__Note: Tomatoes new session requests will return an access token that the SDK will store in the keychain. The SDK will try to apply the token stored in the keychain to send requests to Tomatoes that need authentication.__
 
 ### Request user info
 
