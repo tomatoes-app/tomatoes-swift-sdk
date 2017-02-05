@@ -1,5 +1,5 @@
 # Tomatoes Swift SDK
-
+[![Build Status](https://travis-ci.org/tomatoes-app/tomatoes-swift-sdk.svg?branch=master)](https://travis-ci.org/tomatoes-app/tomatoes-swift-sdk)
 ## Requirements
 
 - iOS 10.0+ / macOS 10.10+
