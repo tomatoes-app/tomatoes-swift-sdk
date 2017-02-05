@@ -1,5 +1,9 @@
 # Tomatoes Swift SDK
 [![Build Status](https://travis-ci.org/tomatoes-app/tomatoes-swift-sdk.svg?branch=master)](https://travis-ci.org/tomatoes-app/tomatoes-swift-sdk)
+
+The Tomatoes Swift SDK allows developers to quickly add Tomatoes services to their Swift applications. 
+See [API reference](http://www.tomato.es/pages/api_reference) for more details.
+
 ## Requirements
 
 - iOS 9.0+ / macOS 10.11+
@@ -36,8 +40,23 @@ let package = Package(
     dependencies: [
         .Package(url: "https://github.com/tomatoes-app/tomatoes-swift-sdk.git", Version(0,2,1))
     ])
-````
+```
 ## Usage
+
+### Create a session
+To enstablish a Tomatoes session implement the GitHub auth and retrive the access token, see [GitHub doc](https://developer.github.com/v3/oauth_authorizations/). Leave the default scope. 
+Use the GitHub access token to create a session as follow:
+
+```Swift
+ let session = Session(provider: .github, accessToken: <github-access-token>)
+ session.create { (result) in
+    switch result {
+    case .success: print("You are authenticated")
+    case .failure(let error): print(error?.localizedDescription ?? "no error description")
+   }
+ }
+```
+__Note: The token return from Tomatoes will be automaically stored on keychain and applied to the authenticated requests.__
 
 ### Request user info
 
@@ -48,4 +67,4 @@ User.read { (result) in
     case .failure(let error): print(error?.localizedDescription)
     }
 }
-````
+```
