@@ -80,15 +80,13 @@ enum Tomatoes {
     
     var stubFileName: String {
         switch self {
-            
-        case .readTomatoes(let page): return "readTomatoes\(page).json"
-        case .readTomato(let id): return "readTomato\(id).json"
-        case .updateTomato(let id): return "updateTomato\(id).json"
-        case .destroyTomato(let id): return "destroyTomato\(id).json"
-        case .readProject(let id): return "readProject\(id).json"
-        case .updateProject(let id): return "updateProject\(id).json"
-        case .destroyProject(let id): return "destroyProject\(id).json"
-        case .readLeaderboard(let period, _): return "readLeaderboard\(period.rawValue).json"
+        case .readTomatoes: return "readTomatoes.json"
+        case .readProjects: return "readProjects.json"
+        case .readTomato: return "readTomato.json"
+        case .updateTomato: return "updateTomato.json"
+        case .readProject: return "readProject.json"
+        case .updateProject: return "updateProject.json"
+        case .readLeaderboard: return "readLeaderboard.json"
         default: return "\(self).json"
         }
     }

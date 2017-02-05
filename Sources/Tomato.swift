@@ -34,24 +34,14 @@ public class Tomato: Deserializable, Serializable {
         params["tag_list"] = tagList
         return params
     }
-   
-    class func responseBlock(_ completion: TomatoBlock?) -> ResponseBlock {
-        return { (result, error) in
-            if let tomato = Tomato(json: result) {
-                completion?(.success(tomato))
-            } else {
-                completion?(.failure(error))
-            }
-        }
-    }
     
     public func create(completion: TomatoBlock?) {
         let params = ["tomato": parameters()]
-        Tomatoes.createTomato.request(params, completion: Tomato.responseBlock(completion))
+        Tomatoes.createTomato.request(params, completion: responseBlock(completion))
     }
     
     public class func read(id: String, completion: TomatoBlock?) {
-        Tomatoes.readTomato(id: id).request(completion: Tomato.responseBlock(completion))
+        Tomatoes.readTomato(id: id).request(completion: responseBlock(completion))
     }
     
     public func update(completion: TomatoBlock?) {
@@ -60,10 +50,10 @@ public class Tomato: Deserializable, Serializable {
             return
         }
         let params = ["tomato": parameters()]
-        Tomatoes.updateTomato(id: id).request(params, completion: Tomato.responseBlock(completion))
+        Tomatoes.updateTomato(id: id).request(params, completion: responseBlock(completion))
     }
     
-    public func destroy(completion: SuccessBlock?) {
+    public func destroy(completion: EmptyResultBlock?) {
         guard let id = id else {
             completion?(.failure(TomatoesError.model("Tomato id not found.")))
             return
@@ -72,7 +62,7 @@ public class Tomato: Deserializable, Serializable {
             if let error = error {
                 completion?(.failure(error))
             } else {
-                completion?(.success(true))
+                completion?(.success)
             }
         }
     }

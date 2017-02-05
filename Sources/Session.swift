@@ -45,12 +45,12 @@ public class Session: Serializable {
     }
     
     /** Deletes all Tomatoes API active sessions for the current user.*/
-    public func destroy(completion: SuccessBlock?) {
+    public func destroy(completion: EmptyResultBlock?) {
         Tomatoes.destroySession.request(self.parameters()) { (_, error) in
             if let error = error {
                 completion?(.failure(error))
             } else {
-                completion?(.success(true))
+                completion?(.success)
             }
         }
     }
