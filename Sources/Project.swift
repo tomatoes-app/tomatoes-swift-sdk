@@ -8,6 +8,9 @@
 
 import Foundation
 
+public typealias ProjectBlock = (_ result: Result<Project>) -> Void
+public typealias ProjectsBlock = (_ result: Result<PaginatedList<Project>>) -> Void
+
 public class Project: Deserializable, Serializable {
     public private(set) var id: String?
     public var name: String?
@@ -41,33 +44,55 @@ public class Project: Deserializable, Serializable {
         return params
     }
     
-    public func create(completion: ResponseBlock?) {
+    class func responseBlock(_ completion: ProjectBlock?) -> ResponseBlock {
+        return { (result, error) in
+            if let project = Project(json: result) {
+                completion?(.success(project))
+            } else {
+                completion?(.failure(error))
+            }
+        }
+    }
+
+    public func create(completion: ProjectBlock?) {
         let params = ["project": parameters()]
-        Tomatoes.createProject.request(params, completion: completion)
+        Tomatoes.createProject.request(params, completion: Project.responseBlock(completion))
     }
     
-    public class func read(id: String, completion: ResponseBlock?) {
-        Tomatoes.readProject(id: id).request(completion: completion)
+    public class func read(id: String, completion: ProjectBlock?) {
+        Tomatoes.readProject(id: id).request(completion: Project.responseBlock(completion))
     }
     
-    public func update(completion: ResponseBlock?) {
+    public func update(completion: ProjectBlock?) {
         guard let id = id else {
-            completion?(nil, TomatoesError.model("Project id not found."))
+            completion?(.failure(TomatoesError.model("Project id not found.")))
             return
         }
         let params = ["project": parameters()]
-        Tomatoes.updateProject(id: id).request(params, completion: completion)
+        Tomatoes.updateProject(id: id).request(params, completion: Project.responseBlock(completion))
     }
     
-    public func destroy(completion: ResponseBlock?) {
+    public func destroy(completion: SuccessBlock?) {
         guard let id = id else {
-            completion?(nil, TomatoesError.model("Project id not found."))
+            completion?(.failure(TomatoesError.model("Project id not found.")))
             return
         }
-        Tomatoes.destroyProject(id: id).request(self.parameters(), completion: completion)
+        Tomatoes.destroyProject(id: id).request(self.parameters()) { (_, error) in
+            if let error = error {
+                completion?(.failure(error))
+            } else {
+                completion?(.success(true))
+            }
+        }
     }
     
-    public class func items(page: UInt, completion: ResponseBlock?) {
-        Tomatoes.readProjects(page: page).request(completion: completion)
+    public class func items(page: UInt, completion: ProjectsBlock?) {
+        Tomatoes.readProjects(page: page).request { (result, error) in
+            if let projectsList = PaginatedList<Project>.init(json: result, root: "projects") {
+                completion?(.success(projectsList))
+            } else {
+                completion?(.failure(error))
+            }
+        }
     }
 }

@@ -8,6 +8,9 @@
 
 import Foundation
 
+public typealias SessionBlock = (_ result: Result<String>) -> Void
+
+
 public class Session: Serializable {
     public var provider: Provider
     public var accessToken: String
@@ -31,14 +34,24 @@ public class Session: Serializable {
     /** Creates a new session using a third party auth provider token.
         If a user associated to the access token doesn't exist, a new user will be created.
         The response includes a Tomatoes API token that should be used to perform authenticated requests. */
-   
-    public func create(completion: ResponseBlock?) {
-        Tomatoes.createSession.request(self.parameters(), completion: completion)
+    public func create(completion: SessionBlock?) {
+        Tomatoes.createSession.request(self.parameters()) { (result, error) in
+            if let token = result?["token"] as? String {
+                completion?(.success(token))
+            } else {
+                completion?(.failure(error))
+            }
+        }
     }
     
     /** Deletes all Tomatoes API active sessions for the current user.*/
-   
-    public func destroy(completion: ResponseBlock?) {
-        Tomatoes.destroySession.request(self.parameters(), completion: completion)
+    public func destroy(completion: SuccessBlock?) {
+        Tomatoes.destroySession.request(self.parameters()) { (_, error) in
+            if let error = error {
+                completion?(.failure(error))
+            } else {
+                completion?(.success(true))
+            }
+        }
     }
 }

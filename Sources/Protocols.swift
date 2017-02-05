@@ -1,15 +1,12 @@
 //
-//  Model.swift
-//  Tomatoes
+//  Protocols.swift
+//  tomatoes-swift-sdk
 //
-//  Created by Giorgia Marenda on 1/22/17.
-//  Copyright © 2017 Giorgia Marenda. All rights reserved.
+//  Created by Giorgia Marenda on 2/4/17.
+//
 //
 
 import Foundation
-
-public typealias JSONObject = [String : Any]
-public typealias JSONList = [[String : Any]]
 
 public protocol Deserializable {
     init?(json: [String : Any]?)
@@ -17,18 +14,6 @@ public protocol Deserializable {
 
 public protocol Serializable {
     func parameters() -> [String : Any]
-}
-
-public enum Provider: String {
-    case github
-    case twitter
-}
-
-public enum Period: String {
-    case daily
-    case weekly
-    case monthly
-    case overall
 }
 
 public extension Deserializable {

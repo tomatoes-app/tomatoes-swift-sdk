@@ -11,10 +11,12 @@
 		C71D7F261E3E95F1002CB37B /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71D7F251E3E95F1002CB37B /* OHHTTPStubs.framework */; };
 		C71D7F281E3E965A002CB37B /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F271E3E965A002CB37B /* UserTests.swift */; };
 		C71D7F291E3E965A002CB37B /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F271E3E965A002CB37B /* UserTests.swift */; };
+		C71D7F541E469A00002CB37B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F531E469A00002CB37B /* Protocols.swift */; };
+		C71D7F551E469A00002CB37B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71D7F531E469A00002CB37B /* Protocols.swift */; };
 		C725A4F71E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
 		C725A4F81E3D4D7E0026A71D /* KeychainSwiftDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */; };
-		C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Model.swift */; };
-		C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Model.swift */; };
+		C725A4F91E3D4D7E0026A71D /* Costants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Costants.swift */; };
+		C725A4FA1E3D4D7E0026A71D /* Costants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F41E3D4D7E0026A71D /* Costants.swift */; };
 		C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F51E3D4D7E0026A71D /* Network.swift */; };
 		C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F51E3D4D7E0026A71D /* Network.swift */; };
 		C725A4FD1E3D4D7E0026A71D /* Tomatoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */; };
@@ -67,8 +69,9 @@
 		C71D7F231E3E95D4002CB37B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		C71D7F251E3E95F1002CB37B /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		C71D7F271E3E965A002CB37B /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTests.swift; path = Sources/UserTests.swift; sourceTree = SOURCE_ROOT; };
+		C71D7F531E469A00002CB37B /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		C725A4F31E3D4D7E0026A71D /* KeychainSwiftDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainSwiftDistrib.swift; sourceTree = "<group>"; };
-		C725A4F41E3D4D7E0026A71D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C725A4F41E3D4D7E0026A71D /* Costants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Costants.swift; sourceTree = "<group>"; };
 		C725A4F51E3D4D7E0026A71D /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C725A4F61E3D4D7E0026A71D /* Tomatoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tomatoes.swift; sourceTree = "<group>"; };
 		C725A5051E3D59C20026A71D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -145,7 +148,7 @@
 		C725A5041E3D55A50026A71D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C725A4F41E3D4D7E0026A71D /* Model.swift */,
+				C725A4F41E3D4D7E0026A71D /* Costants.swift */,
 				C725A5141E3D5A440026A71D /* PaginatedList.swift */,
 				C725A5051E3D59C20026A71D /* Session.swift */,
 				C725A5081E3D59CC0026A71D /* User.swift */,
@@ -155,6 +158,7 @@
 				C725A5171E3D5E580026A71D /* Counter.swift */,
 				C725A51A1E3D5E7C0026A71D /* Authorization.swift */,
 				C75333441E3E70FD00AF4DD2 /* Error.swift */,
+				C71D7F531E469A00002CB37B /* Protocols.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -408,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C71D7F541E469A00002CB37B /* Protocols.swift in Sources */,
 				C725A5061E3D59C20026A71D /* Session.swift in Sources */,
 				C725A5151E3D5A440026A71D /* PaginatedList.swift in Sources */,
 				C725A5181E3D5E580026A71D /* Counter.swift in Sources */,
@@ -417,7 +422,7 @@
 				C725A5091E3D59CC0026A71D /* User.swift in Sources */,
 				C725A4FD1E3D4D7E0026A71D /* Tomatoes.swift in Sources */,
 				C725A50C1E3D59D80026A71D /* Tomato.swift in Sources */,
-				C725A4F91E3D4D7E0026A71D /* Model.swift in Sources */,
+				C725A4F91E3D4D7E0026A71D /* Costants.swift in Sources */,
 				C725A4FB1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5121E3D5A230026A71D /* Score.swift in Sources */,
 				C75333451E3E70FD00AF4DD2 /* Error.swift in Sources */,
@@ -437,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C71D7F551E469A00002CB37B /* Protocols.swift in Sources */,
 				C725A5071E3D59C20026A71D /* Session.swift in Sources */,
 				C725A5161E3D5A440026A71D /* PaginatedList.swift in Sources */,
 				C725A5191E3D5E580026A71D /* Counter.swift in Sources */,
@@ -446,7 +452,7 @@
 				C725A50A1E3D59CC0026A71D /* User.swift in Sources */,
 				C725A4FE1E3D4D7E0026A71D /* Tomatoes.swift in Sources */,
 				C725A50D1E3D59D80026A71D /* Tomato.swift in Sources */,
-				C725A4FA1E3D4D7E0026A71D /* Model.swift in Sources */,
+				C725A4FA1E3D4D7E0026A71D /* Costants.swift in Sources */,
 				C725A4FC1E3D4D7E0026A71D /* Network.swift in Sources */,
 				C725A5131E3D5A230026A71D /* Score.swift in Sources */,
 				C75333461E3E710100AF4DD2 /* Error.swift in Sources */,

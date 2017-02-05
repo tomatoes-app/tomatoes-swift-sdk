@@ -8,7 +8,7 @@
 
 import Foundation
 
-public typealias ResponseBlock = (_ result: Any?, _ error: Error?) -> Void
+public typealias ResponseBlock = (_ result: JSONObject?, _ error: Error?) -> Void
 
 struct Network {
     
@@ -56,7 +56,7 @@ struct Network {
                 print(response.debugDescription)
             }
             DispatchQueue.main.async {
-                completion?(Network.deserialize(data: data), error)
+                completion?(Network.deserialize(data: data) as? JSONObject, error)
             }
         })
         task.resume()

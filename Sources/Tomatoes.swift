@@ -86,20 +86,6 @@ enum Tomatoes {
         case .destroySession, .destroyTomato, .destroyProject: return "DELETE"
         }
     }
-    
-    func map(object: JSONObject?) -> Any? {
-        switch self {
-        case .createSession: return object?["token"] as? String
-        case .readUser: return User(json: object)
-        case .readTomato, .createTomato, .updateTomato: return Tomato(json: object) as Tomato?
-        case .readTomatoes: return PaginatedList<Tomato>.init(json: object, root: "tomatoes") as PaginatedList<Tomato>?
-        case .readProjects: return PaginatedList<Project>.init(json: object, root: "projects") as PaginatedList<Project>?
-        case .readProject, .createProject, .updateProject: return Project(json: object) as Project?
-        case .readLeaderboard: return PaginatedList<Score>.init(json: object, root: "scores") as PaginatedList<Score>?
-        case .destroySession, .destroyTomato, .destroyProject: return nil
-        default: return object
-        }
-    }
 
     func handleSession(result: Any? = nil) {
         switch self {
@@ -120,14 +106,14 @@ enum Tomatoes {
         let url = URL.appendingPathComponent(path)
         
         Network.perfomRequest(url, accessToken: token, parameters: parameters, method: method) { (object, error) in
-            guard let object = object as? JSONObject else {
+            guard let object = object else {
                 self.handleSession()
                 completion?(nil, error)
                 return
             }
-            let result = self.map(object: object)
-            self.handleSession(result: result)
-            completion?(result, error)
+            self.handleSession(result: object)
+            completion?(object, error)
         }
     }
 }
+
