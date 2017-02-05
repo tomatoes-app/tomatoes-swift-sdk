@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias UserBlock = (_ result: Result<User>) -> Void
+
 public class User: Deserializable, Serializable {
     public private(set) var id: String?
     public var name: String?
@@ -63,13 +65,23 @@ public class User: Deserializable, Serializable {
         return params
     }
     
-    public class func read(completion: ResponseBlock?) {
-        Tomatoes.readUser.request(completion: completion)
+    public class func read(completion: UserBlock?) {
+        Tomatoes.readUser.request { (result, error) in
+            if let user = User(json: result) {
+                completion?(.success(user))
+            }
+            completion?(.failure(error))
+        }
     }
     
-    public func update(completion: ResponseBlock?) {
+    public func update(completion: UserBlock?) {
         let params = ["user": parameters()]
-        Tomatoes.updateUser.request(params, completion: completion)
+        Tomatoes.updateUser.request(params) { (result, error) in
+            if let user = User(json: result) {
+                completion?(.success(user))
+            }
+            completion?(.failure(error))
+        }
     }
 }
 

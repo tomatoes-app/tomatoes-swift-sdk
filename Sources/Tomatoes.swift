@@ -120,14 +120,13 @@ enum Tomatoes {
         let url = URL.appendingPathComponent(path)
         
         Network.perfomRequest(url, accessToken: token, parameters: parameters, method: method) { (object, error) in
-            guard let object = object as? JSONObject else {
+            guard let object = object else {
                 self.handleSession()
                 completion?(nil, error)
                 return
             }
-            let result = self.map(object: object)
-            self.handleSession(result: result)
-            completion?(result, error)
+            self.handleSession(result: object)
+            completion?(object, error)
         }
     }
 }
