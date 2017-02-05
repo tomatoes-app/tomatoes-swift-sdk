@@ -51,10 +51,6 @@ struct Network {
         }
         let session = URLSession.shared
         let task = session.dataTask(with: request, completionHandler: { data, response, error in
-            if let response = response as? HTTPURLResponse {
-                print(response.statusCode)
-                print(response.debugDescription)
-            }
             DispatchQueue.main.async {
                 completion?(Network.deserialize(data: data) as? JSONObject, error)
             }
