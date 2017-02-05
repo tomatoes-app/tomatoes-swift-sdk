@@ -41,7 +41,30 @@ let package = Package(
         .Package(url: "https://github.com/tomatoes-app/tomatoes-swift-sdk.git", Version(0,2,1))
     ])
 ```
+### App Transport Security
+
+App Transport Security was introduced with iOS 9 to enforce secure Internet connections. To securely connect to Tomatoes, add the following exception to your application's `Info.plist` file.
+
+```xml
+<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>www.tomato.es</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			</dict>
+		</dict>
+	</dict>
+```
+
 ## Usage
+Review the iOS [sample application](https://github.com/tomatoes-app/tomatoes-ios)
 
 ### Create a session
 To enstablish a Tomatoes session implement the GitHub auth and retrive the access token, see [GitHub doc](https://developer.github.com/v3/oauth_authorizations/). Leave the default scope. 
