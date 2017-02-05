@@ -26,11 +26,26 @@ class TomatoesTests: XCTestCase {
     func stubEndpoint(endpoint: Tomatoes) {
         stub(condition: isPath(endpoint.path)) { _ in
             guard let stubPath = OHPathForFile(endpoint.stubFileName, type(of: self)) else {
-                assertionFailure("Stub file \(endpoint.stubFileName).json not founded")
+                assertionFailure("Stub file \(endpoint.stubFileName) not founded")
                 return OHHTTPStubsResponse()
             }
             return fixture(filePath: stubPath, headers: ["Content-Type":"application/json"])
         }
+    }
+    
+    func testSession() {
+        stubEndpoint(endpoint: Tomatoes.createSession)
+        let expect = expectation(description: "Session post")
+        let session = Session(provider: .github, accessToken: "fakefake")
+        session.create { (result) in
+            switch result {
+            case .success(let token):
+                XCTAssertEqual(token, "d994a295cf68342b99e3036827d3ef8a")
+            case .failure: XCTFail()
+            }
+            expect.fulfill()
+        }
+        waitForExpectations(timeout: 2, handler: nil)
     }
     
     func testReadUser() {

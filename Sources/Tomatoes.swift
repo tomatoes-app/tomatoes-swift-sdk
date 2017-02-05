@@ -63,17 +63,14 @@ enum Tomatoes {
         switch self {
         case .createSession, .destroySession: return "/api/session"
         case .readUser, .updateUser: return "/api/user"
-      
         case .readTomatoes, .createTomato: return "/api/tomatoes"
         case .readTomato(let id): return "/api/tomatoes/\(id)"
         case .updateTomato(let id): return "/api/tomatoes/\(id)"
         case .destroyTomato(let id): return "/api/tomatoes/\(id)"
-            
         case .readProjects, .createProject: return "/api/projects"
         case .readProject(let id): return "/api/projects/\(id)"
         case .updateProject(let id): return "/api/projects/\(id)"
         case .destroyProject(let id): return "/api/projects/\(id)"
-
         case .readLeaderboard(let period, _): return "/api/leaderboard/\(period.rawValue)"
         }
     }
@@ -100,19 +97,6 @@ enum Tomatoes {
         }
     }
 
-    func handleSession(result: Any? = nil) {
-        switch self {
-        case .createSession:
-            if let token = result as? String {
-                KeychainSwift().synchronizable = true
-                KeychainSwift().accessGroup = "tomatoes-swift-sdk"
-                KeychainSwift().set(token, forKey: Tomatoes.tokenKey)
-            }
-        case .destroySession: KeychainSwift().delete(Tomatoes.tokenKey)
-        default: break
-        }
-    }
-    
     func request(_ parameters: JSONObject? = nil, completion: ResponseBlock?) {
         guard let URL = URL(string: Tomatoes.baseURLString) else { return }
         let token = KeychainSwift().get(Tomatoes.tokenKey) ?? ""
@@ -120,11 +104,9 @@ enum Tomatoes {
         
         Network.perfomRequest(url, accessToken: token, parameters: parameters, method: method) { (object, error) in
             guard let object = object else {
-                self.handleSession()
                 completion?(nil, error)
                 return
             }
-            self.handleSession(result: object)
             completion?(object, error)
         }
     }

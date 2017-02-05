@@ -37,6 +37,8 @@ public class Session: Serializable {
     public func create(completion: SessionBlock?) {
         Tomatoes.createSession.request(self.parameters()) { (result, error) in
             if let token = result?["token"] as? String {
+                KeychainSwift().synchronizable = true
+                KeychainSwift().set(token, forKey: Tomatoes.tokenKey)
                 completion?(.success(token))
             } else {
                 completion?(.failure(error))
@@ -50,6 +52,7 @@ public class Session: Serializable {
             if let error = error {
                 completion?(.failure(error))
             } else {
+                KeychainSwift().delete(Tomatoes.tokenKey)
                 completion?(.success)
             }
         }

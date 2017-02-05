@@ -59,6 +59,8 @@
 		C7EBF5341E46FF1000A5880C /* readLeaderboard.json in Resources */ = {isa = PBXBuildFile; fileRef = C7EBF5321E46FF1000A5880C /* readLeaderboard.json */; };
 		C7EBF5361E47021600A5880C /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EBF5351E47021600A5880C /* OHHTTPStubs.framework */; };
 		C7EBF5381E47022900A5880C /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EBF5371E47022900A5880C /* OHHTTPStubs.framework */; };
+		C7EBF5B41E47A36B00A5880C /* createSession.json in Resources */ = {isa = PBXBuildFile; fileRef = C7EBF5B11E47A2D200A5880C /* createSession.json */; };
+		C7EBF5B51E47A36B00A5880C /* createSession.json in Resources */ = {isa = PBXBuildFile; fileRef = C7EBF5B11E47A2D200A5880C /* createSession.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,7 @@
 		C7EBF5321E46FF1000A5880C /* readLeaderboard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = readLeaderboard.json; sourceTree = "<group>"; };
 		C7EBF5351E47021600A5880C /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
 		C7EBF5371E47022900A5880C /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = SOURCE_ROOT; };
+		C7EBF5B11E47A2D200A5880C /* createSession.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = createSession.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				C7EBF5231E46F13F00A5880C /* TomatoesTests.swift */,
+				C7EBF5B11E47A2D200A5880C /* createSession.json */,
 				C71D7F311E4683B1002CB37B /* readUser.json */,
 				C71D7F501E4693D2002CB37B /* readTomatoes.json */,
 				C7EBF5291E46F37700A5880C /* readTomato.json */,
@@ -445,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EBF5B41E47A36B00A5880C /* createSession.json in Resources */,
 				C7EBF52A1E46F37700A5880C /* readTomato.json in Resources */,
 				C7EBF5301E46F68500A5880C /* readProject.json in Resources */,
 				C71D7F321E4683B1002CB37B /* readUser.json in Resources */,
@@ -465,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7EBF5B51E47A36B00A5880C /* createSession.json in Resources */,
 				C7EBF52B1E46F37700A5880C /* readTomato.json in Resources */,
 				C7EBF5311E46F68500A5880C /* readProject.json in Resources */,
 				C71D7F331E4683B1002CB37B /* readUser.json in Resources */,
@@ -649,7 +655,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = TomatoesiOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -713,7 +719,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = TomatoesiOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
@@ -899,7 +905,7 @@
 				INFOPLIST_FILE = TomatoesMacOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
@@ -963,7 +969,7 @@
 				INFOPLIST_FILE = TomatoesMacOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gii.tomatoes;
 				PRODUCT_NAME = Tomatoes;
